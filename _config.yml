@@ -1,0 +1,5 @@
+title: Reading List Theme
+description: A theme for my reading list
+owner_name: Brett DeWoody
+plugins:
+    - jekyll-seo-tag
