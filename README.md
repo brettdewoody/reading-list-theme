@@ -1,37 +1,20 @@
-# reading-list-theme
+# Reading List Theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+This is a custom Github Pages theme for use with my [Reading List](https://brettdewoody.github.io/reading-list/) - a list of articles I've recently read and found interesing or useful.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+## Local Usage
 
-TODO: Delete this and the text above, and describe your gem
+To run the theme locally, run:
 
+`bundle exec jekyll serve --watch`
 
-## Installation
+## Github Pages Usage
 
-Add this line to your Jekyll site's `Gemfile`:
+Create a `_config.yml` file in your repo and add the following line:
 
-```ruby
-gem "reading-list-theme"
-```
+`remote_theme: brettdewoody/reading-list-theme`
 
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: reading-list-them
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install reading-list-them
-
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Your Github pages
 
 ## Contributing
 
