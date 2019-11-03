@@ -1,6 +1,104 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
 
+:root {
+  --colorBlack: #000000;
+  --colorGray: #b7b7b7;
+  --border: 0.1875rem solid var(--colorBlack);
+  --bigFont: calc(1rem + 0.5vw);
+  --mediumFont: calc(0.6rem + 0.5vw);
+  --smallFont: calc(0.5rem + 0.5vw);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
 html,
 body {
-  font-family: 'Viga', sans-serif;
+  font-family: 'Heebo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 3vw;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 1400px;
+}
+
+header {
+  padding-top: calc(1rem + 2vh);
+  text-transform: uppercase;
+  border-bottom: var(--border);
+  font-weight: 900;
+}
+
+.site-owner {
+  font-weight: 900;
+  font-size: var(--bigFont);
+}
+
+.site-owner span {
+  color: #c5c5c5;
+}
+
+.site-description {
+  font-size: var(--mediumFont);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: var(--smallFont);
+  text-transform: uppercase;
+  padding: calc(0.5rem + 2vh) 0;
+  font-weight: 600;
+  color: var(--colorGray);
+}
+
+p:not(:last-child) {
+  border-bottom: 0.1rem solid var(--colorGray);
+}
+
+p > a {
+  font-size: var(--bigFont);
+  color: #000000;
+  font-weight: 900;
+  line-height: 1.05em;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+footer {
+  padding-top: calc(1rem + 2vh);
+  padding-bottom: 1rem;
+  border-top: var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--smallFont);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: var(--colorBlack);
 }
